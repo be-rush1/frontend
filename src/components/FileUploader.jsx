@@ -55,7 +55,7 @@ export default function FileUploader() {
     setStatus("Uploading");
 
     try {
-      const res = await axios.post("https://desafio-gw0w.onrender.com", { text: inputText });
+      const res = await axios.post("https://desafio-gw0w.onrender.com/Content", { text: inputText });
       setStatus("Uploaded");
       setResponseMessage(res.data.message);
     } catch (error) {
